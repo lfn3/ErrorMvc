@@ -1,0 +1,13 @@
+﻿@using ErrorMVC.Controllers;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<p>Pick your poison:</p>
+<ul>
+    @foreach(var action in typeof(HomeController).GetMethods().Where(x => x.ReturnType == typeof(ActionResult) &&  x.Name != "Index"))
+    {
+        <li>@Html.ActionLink(action.Name, action.Name)</li>
+    }
+</ul>
