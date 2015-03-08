@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.22013.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorMVC", "ErrorMVC\ErrorMVC.csproj", "{CE4A2C95-6A69-4AFA-A7C3-9F2B1D47786A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{0F34AB58-A794-4E97-808D-1CD9B7ADF1B2}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget\MVCErrorPages.nuspec = Nuget\MVCErrorPages.nuspec
+		Nuget\web.config.transform = Nuget\web.config.transform
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

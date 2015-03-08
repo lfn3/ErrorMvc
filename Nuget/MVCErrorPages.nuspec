@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MVCErrorPages</id>
+    <version>1.0.0</version>
+    <authors>Liam Falconer</authors>
+    <licenseUrl>http://en.wikipedia.org/wiki/MIT_License</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Custom Error pages for MVC apps.</description>
+  </metadata>
+  <files>
+    <file src="web.config.transform" target="content\web.config.transform" />
+
+    <file src="..\ErrorMVC\Views\Errors\*.*" target="content\Views\Errors" />
+  </files>
+</package>
